@@ -1,0 +1,24 @@
+@mixin slantedBG {
+  -webkit-clip-path: polygon(100% 0, 100% 60%, 16% 100%, 0 100%, 0 50%, 0 0);
+  clip-path: polygon(100% 0, 100% 60%, 16% 100%, 0 100%, 0 50%, 0 0);
+}
+
+@mixin bottomTriangle {
+  -webkit-clip-path: polygon(100% 100%, 100% 60%, 16% 100%, 32% 100%, 89% 73%, 88% 100%);
+  clip-path: polygon(100% 100%, 100% 60%, 16% 100%, 32% 100%, 89% 73%, 88% 100%);
+}
+
+@mixin responsiveness($arg...) {
+  @if length($arg) == 1 {
+    @media screen and (max-width: nth($arg, 1)){
+      // content is a place holder similar to pass in python
+      @content;
+    }
+  }
+  @if length($arg) == 2 {
+    @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) {
+      @content;
+    }
+  }
+
+}
