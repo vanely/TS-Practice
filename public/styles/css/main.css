@@ -10,7 +10,7 @@ body {
     -webkit-clip-path: polygon(100% 0, 100% 60%, 16% 100%, 0 100%, 0 50%, 0 0);
     clip-path: polygon(100% 0, 100% 60%, 16% 100%, 0 100%, 0 50%, 0 0);
     transition: linear .4s;
-    background-color: rgba(12, 153, 200, 0.3); }
+    background-color: rgba(48, 230, 214, 0.3); }
     @media screen and (max-width: 500px) and (min-width: 200px) {
       body .bg {
         background-color: rgba(255, 148, 27, 0.3); } }
